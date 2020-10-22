@@ -26,7 +26,6 @@ const Weather = (props) => {
   const [forecast, setForecast] = useState([]);
 
   let cityData = null;
-  let forecastData = null;
 
   const getCityData = async () => {
     try {
