@@ -31,7 +31,7 @@ const Weather = (props) => {
   const getCityData = async () => {
     try {
       let response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${APPID}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${APPID}`
       );
 
       cityData = response.data;
